@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:serif;
+    font-size: 14px;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+}
+.centro{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+.celular{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.celular img{
+    height: 50rem;
+}
+.continue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+.group{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+.group:nth-child(1){
+    min-height: 19rem;
+}
+.instagram-logo{
+    height: 3rem;
+}
+.login{
+    background-color: #0095f6;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px;
+    width: 80%;
+    cursor: pointer;
+}
+.teste{
+    display: flex;
+    align-items: center;
+}
+.teste p{
+    margin: 10px
+}
+.facebook-login{
+    color: #000080;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.facebook-login img{
+    margin-right: 10px;
+}
+.group span{
+    width: 80px;
+    border-top: 2px solid;
+    display: block;
+    color: rgb(160, 160, 160);
+}
+.group input{
+    width: 80%;
+    height: 30px;
+    border: 1px solid lightgray;
+    font-family: sans-serif;
+    background-color: rgb(243, 243, 243);
+}
+.nConta{
+    color: rgb(160, 160, 160);
+}
+.nConta a{
+    color: #0095f6;
+}
+#app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+#dowload{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    padding: 1rem;
+}
+.app-dowload{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+.app-dowload:nth-child(1){
+    background-image: url(../img/apple-button.png);
+}
+.app-dowload:nth-child(2){
+    background-image: url(../img/googleplay-button.png);
+}
+
+@media (max-width: 1024px){
+    .centro{
+        width: 90%;
+    }
+}
+@media (max-width: 650px){
+    body{
+        background-color: white;
+    }
+    .centro{
+        height: 100%;
+        width: 90%;
+    }
+    .celular{
+        display: none;
+    }
+    .continue{
+        width: 100%;
+    }
+    
+}
+@media (max-width: 370px){
+    #dowload{
+        display: flex;
+        flex-direction: column;
+    }
+    .app-dowload{
+        margin-bottom: 20PX;
+    }
+}
